@@ -1,0 +1,49 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.container {
+  position: fixed;
+  width: 33%;
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  z-index: 999;
+  background-color: #fff;
+  padding: 20px;
+  overflow: scroll;
+  animation: fade-in 100ms ease-in;
+  border-left: 1px solid #e7e7e7;
+}
+
+@media screen and (max-width: 440px) {
+  .container {
+    width: 100%;
+    height: 70%;
+    left: 0px;
+    top: 30%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.iconsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+[data-theme='dark'] .container {
+  background-color: #202020;
+  border-left: 1px solid #4a4a4a;
+}

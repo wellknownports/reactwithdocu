@@ -1,0 +1,8 @@
+p {
+  font-weight: 500 !important;
+}
+
+strong {
+  display: inline !important;
+  color: var(--ifm-menu-color-active);
+}
